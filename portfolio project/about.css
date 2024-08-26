@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.about-content {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-image {
+    width: 370px;
+    height: 370px;
+}
+
+.about-text {
+    max-width: 445px;
+}
+
+.about-text span {
+    font-size: 15px;
+    color: #0058b5;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.about-text h3 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.about-desc p {
+    font-size: 15px;
+    color: #767676;
+}
+
+.about-button button {
+    width: 195px;
+    padding: 20px;
+    background-color: #0058b5;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    font-size: 14px;
+}
+
+.about-button button:hover {
+    background-color: #f7ce00;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.about-desc p {
+    padding: 30px 0 40px 0;
+}
+
+.about .about-info {
+    max-width: 1070px !important;
+}
+
+.info-img {
+    width: 100%;
+    height: 260px;
+    background-image: url(images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-info {
+    position: relative;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0058b5;
+    width: 100%;
+    height: 260px;
+    opacity: .95;
+}
+
+.about-info-content {
+    position: absolute;
+    bottom: 38%;
+    left: 25%;
+    z-index: 1;
+}
+
+.about-info-content ul {
+    display: flex;
+    align-items: center;
+}
+
+.about-info-content ul li {
+    list-style: none;
+    padding: 0 40px;
+}
+
+.ah h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.ah span {
+    font-size: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width:767px) {
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text h3 {
+        font-size: 23px;
+    }
+
+    .about-desc p {
+        padding: 15px 0 25px 0;
+    }
+
+    .info-img {
+        height: 550px;
+    }
+
+    .about-overlay {
+        height: 550px;
+    }
+
+    .about-info-content ul {
+        display: block;
+    }
+
+    .about-info-content ul li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-info-content {
+        bottom: 10%;
+        left: 22%;
+    }
+}

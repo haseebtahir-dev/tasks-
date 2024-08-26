@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+}
+
+.main {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.nav-link.active {
+    color: #f7ce00;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.col-4 {
+    width: 30%;
+}
+
+.image {
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 1;
+}
+
+.content h3 {
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.home-button {
+    margin: auto;
+    background-color: #f7ce00;
+    padding: 9px 15px;
+    width: 180px;
+}
+
+.home-button:hover {
+    background-color: #fff;
+}
+
+.home-button a {
+    border: none;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif !important;
+}
+
+.logo {
+    height: 115px;
+    background-color: #f7ce00;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 130px;
+    height: 130px;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.ul-wrap {
+    margin-top: 50px;
+}
+
+.ul-wrap ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ul-wrap ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.ul-wrap ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ul-wrap ul li a.active {
+    color: #f7ce00;
+}
+
+.sidebar-button {
+    position: fixed;
+    right: 78%;
+    z-index: 1000;
+    bottom: 18%;
+    transition: all 0.3s ease;
+    max-width: 30px;
+}
+
+.sidebar-button button {
+    border: none;
+    background-color: #f7ce00;
+    padding: 5px;
+}
+
+.sider-bar {
+    background-color: #0058b5;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar-button button img {
+    display: block;
+    width: 18px;
+    transition: all 0.3s ease;
+}
+
+/* .sidebar-button.button-hidden img {
+    transform: translateX(-280px);
+} */
+
+.button-hidden {
+    display: none;
+}
+
+.copy-right {
+    position: absolute;
+    bottom: 6%;
+    left: 31%;
+    color: #fff;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    transition: opacity 0.3s ease;
+}
+
+.background-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#unhide {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.ul-wrap ul li a:hover {
+    color: #f7ce00;
+}
+
+
+.home {
+    max-width: 983px;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+}
+
+.mobile-navbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #f7ce00;
+    display: none;
+}
+
+.mobile-logo {
+    width: 100px;
+}
+
+.mobile-logo img {
+    width: 100%;
+}
+
+.mobile-btn {
+    width: 40px;
+    margin-right: 26px;
+
+}
+
+.hamburger img {
+    width: 100%;
+}
+
+.icons-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-navbar-ul {
+    margin-left: 25px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.mobile-navbar-ul ul li {
+    list-style: none;
+}
+
+#hamburger {
+    width: 39px;
+    display: none;
+    background-color: transparent;
+    border: none;
+    transition: all 1s ease
+}
+
+#hamburger img {
+    width: 100%;
+}
+
+#close {
+    width: 39px;
+    background-color: transparent;
+    border: none;
+    display: none;
+    transition: all 1s ease
+}
+
+#close img {
+    width: 100%;
+}
+
+.mobile-navbar-ul li {
+    list-style: none;
+}
+
+.mobile-navbar-ul li a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .sidebar-button {
+        display: none;
+    }
+
+    .sider-bar {
+        display: none;
+    }
+
+    .content {
+        left: 17% !important;
+        bottom: 0;
+        top: 3%;
+        height: 200px;
+    }
+
+    .content h3 {
+        font-size: 38px;
+    }
+
+    .background {
+        transform: none !important;
+    }
+
+    .overlay {
+        height: auto;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .mobile-navbar {
+        display: block;
+    }
+}
